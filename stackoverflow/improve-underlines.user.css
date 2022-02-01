@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name         Stack Overflow undelines improvements
+@description  Improvements for undelines. Mainly for high contrast mode but will work on other ones 
+@namespace    https://github.com/PurpleMagick/
+@version      1.0
+@author       VLAZ
+@license      MIT
+@preprocessor stylus
+==/UserStyle== */
+
+.user-details a,
+a.comment-user,
+a.post-tag,
+a.badge-tag,
+a.badge,
+#sidebar a 
+{
+	text-decoration: initial !important;
+}
+
+a,
+.s-btn__link {
+    text-underline-offset: 3px;
+}
