@@ -2,19 +2,22 @@
 @name         Stack Overflow undelines improvements
 @description  Improvements for undelines. Mainly for high contrast mode but will work on other ones 
 @namespace    https://github.com/PurpleMagick/
-@version      1.1
+@version      1.2
 @author       VLAZ
 @license      MIT
 ==/UserStyle== */
 
-@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), regexp("https?\\/\\/[^.]+.stackoverflow.com"), regexp("https?\\/\\/[^.]+\\.stackexchange.com") {
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
     .user-details a,
+    a.my-profile,
+    a.js-products-menu,
     a.comment-user,
     a.post-tag,
     a.badge-tag,
     a.badge,
-    #sidebar a 
-    {
+    .popup-close a,
+    #products-popover a,
+    #sidebar a {
         text-decoration: initial !important;
     }
 
@@ -22,5 +25,4 @@
     .s-btn__link {
         text-underline-offset: 3px;
     }
-   
 }
