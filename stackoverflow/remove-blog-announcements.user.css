@@ -2,11 +2,11 @@
 @name         Stack Overflow remove blog announcements
 @description  Removes the header and up to two items of the announcements widget which contains news about the blog.
 @namespace    https://github.com/PurpleMagick/
-@version      1.0
+@version      1.1
 @author       VLAZ
 @license      MIT
 ==/UserStyle== */
-@-moz-document domain("stackoverflow.com") {
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
 div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1),
 div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.px16.d-flex.s-sidebarwidget--item:nth-of-type(1),
 div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.px16.d-flex.s-sidebarwidget--item:nth-of-type(2) {
