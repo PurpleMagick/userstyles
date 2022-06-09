@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Stack Overflow remove newsletter 
+@description  Removes the newsletter invitation from right sidebar for all StacExchange sites
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+#newsletter-ad {
+    display: none !important;
+}
+}
