@@ -7,9 +7,9 @@
 @license      MIT
 ==/UserStyle== */
 @-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
-div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1),
-div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.px16.d-flex.s-sidebarwidget--item:nth-of-type(1),
-div.bbw1.bb.d\:fc-black-900.fc-light.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.px16.d-flex.s-sidebarwidget--item:nth-of-type(1) + li.px16.d-flex.s-sidebarwidget--item:nth-of-type(2) {
+li.bbw1.bb.d\:fc-black-900.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1),
+li.bbw1.bb.d\:fc-black-900.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.s-sidebarwidget--item.d-flex.px16:nth-of-type(2),
+li.bbw1.bb.d\:fc-black-900.s-sidebarwidget__small-bold-text.s-sidebarwidget--header:nth-of-type(1) ~ li.px16.d-flex.s-sidebarwidget--item:nth-of-type(2) + li.px16.d-flex.s-sidebarwidget--item:nth-of-type(3) {
     display: none !important;
 }
 }
