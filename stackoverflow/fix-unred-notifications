@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Restore unread message highlight
+@description  Quick fix to make unread messages stand out again as the functionality was broken on 2022-10-27
+@namespace    https://github.com/PurpleMagick/
+@version      1.0
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("serverfault.com"), domain("stackapps.com"), domain("stackexchange.com"), domain("stackoverflow.com"), domain("superuser.com") {
+.unread-item {
+	background-color: var(--blue-100);
+}
+}
