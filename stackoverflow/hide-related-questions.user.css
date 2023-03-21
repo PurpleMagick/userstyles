@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Stack Exchange remove related 
+@description  Removes the related section
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+#inline_related_var_a_less, #inline_related_see_more, and #inline_related_see_less {
+    display: none !important;
+}
+}
