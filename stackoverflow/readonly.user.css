@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name         StackExchange read-only mode
+@description  Disables interactions such as posting or leaving any feedback on posts. Only leaves read-only features. If you browse the sites logged in, you would be able to save posts for later. Leaves flagging intact but removes close reasons. Does not disable keyboard shortcuts.
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+    .js-vote-down-btn,
+    .js-vote-up-btn,
+    .js-edit-post,
+    .js-post-notice-edit-post,
+    .js-suggest-edit-post,
+    #edit-tags,
+    
+    .js-add-link.comments-link,
+    .js-comment-flag,
+    .js-comment-up,
+    
+    #post-editor,
+    #submit-button,
+    a[href$='/questions/ask'],
+    
+    #review-button,
+    .js-actions-sidebar,
+    
+    .bounty-link,
+    
+    a[href*='/edit-tag-wiki/'],
+    
+    .js-join-community,
+    
+    .js-flag-post-link,
+    .js-close-question-link,
+    .js-delete-post,
+    #popup-flag-post ul li:not(:nth-child(1)):not(:nth-child(2)):not(:last-child),
+    #popup-close-question li
+    {
+        display: none !important;
+    }
+}
