@@ -2,7 +2,7 @@
 @name         StackExchange read-only mode
 @description  Disables interactions such as posting or leaving any feedback on posts. Only leaves read-only features. If you browse the sites logged in, you would be able to save posts for later. Leaves flagging intact but removes close reasons. Does not disable keyboard shortcuts.
 @namespace    https://github.com/PurpleMagick/
-@version      1.1
+@version      1.2
 @author       VLAZ
 @license      MIT
 ==/UserStyle== */
@@ -23,7 +23,10 @@
     #submit-button,
     a[href$='/questions/ask'],
     
-    #review-button,
+    #review-button .s-activity-indicator,
+    .review-dialog ul, 
+    .review-dialog h3, 
+    .review-dialog a[href$="/review"], 
     .js-actions-sidebar,
     
     .bounty-link,
