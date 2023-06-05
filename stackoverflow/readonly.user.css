@@ -13,6 +13,7 @@
     .js-edit-post,
     .js-post-notice-edit-post,
     .js-suggest-edit-post,
+    .js-edit-pending,
     #edit-tags,
     
     .js-add-link.comments-link,
@@ -20,7 +21,6 @@
     .js-comment-up,
     .js-comment-edit,
     .js-comment-delete,
-    .js-edit-pending,
     
     #post-editor,
     #submit-button,
