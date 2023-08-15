@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         White highlight on dark background
+@description  Makes the keyboard selection highlight white when using dark themes
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com") {
+    body.theme-dark .keyboard-selected {
+        box-shadow: 15px 15px 50px rgba(255, 255, 255, .2) inset;
+    }
+}
