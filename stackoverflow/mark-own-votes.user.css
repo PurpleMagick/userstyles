@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         Stack Exchange - mark own votes
+@description  Marks votes done in the post action menu with a *. Works for closure/reopen/delete/undelete
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+
+.js-post-menu .s-btn[data-has-active-vote="true"]::after, .js-post-menu .s-btn[title^="You voted"]::after  {
+	content: "*";
+}   
+}
