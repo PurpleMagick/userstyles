@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name         Stack Exchange - fix annoying sticky duplicate window hover
+@description  Fix for https://meta.stackexchange.com/questions/400179/duplicate-modal-row-hover-state-not-cleared - hovering adds a sticky background remvoed on a second hover
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("serverfault.com"), domain("askubuntu.com"), domain("stackapps.com"), domain("mathoverflow.net"), domain("stackexchange.com") {
+
+/* remove the background-color alteration for the class */
+.close-as-duplicate-pane .original-display .list-originals .list .item.hover {
+	background-color: unset;
+}
+
+/* attach the background-color to the :hover pseudo-class and let the browser handle it */
+.close-as-duplicate-pane .original-display .list-originals .list .item:hover,
+.close-as-duplicate-pane .original-display .list-originals .list .item.hover:hover {
+	background-color: var(--black-200);
+}
+
+}
