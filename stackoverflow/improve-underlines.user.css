@@ -2,7 +2,7 @@
 @name         Stack Overflow undelines improvements
 @description  Improvements for undelines. Mainly for high contrast mode but will work on other ones 
 @namespace    https://github.com/PurpleMagick/
-@version      1.2
+@version      1.3
 @author       VLAZ
 @license      MIT
 ==/UserStyle== */
@@ -13,9 +13,14 @@
     a.js-products-menu,
     a.comment-user,
     a.post-tag,
+    a.s-tag,
     a.badge-tag,
     a.badge,
+    header.s-topbar a.s-navigation--item,
+    a.s-btn__filled[href$="/questions/ask"],
     .popup-close a,
+    .uql-nav a.s-btn,
+    .s-btn[href*="/users/edit/"],
     #products-popover a,
     #sidebar a {
         text-decoration: initial !important;
@@ -23,6 +28,6 @@
 
     a,
     .s-btn__link {
-        text-underline-offset: 3px;
+        text-underline-offset: 2px;
     }
 }
